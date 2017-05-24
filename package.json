@@ -8,20 +8,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build-prod": "webpack -p"
+    "build-prod": "webpack -p",
+    "serve": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.5.3",
     "css-loader": "^0.28.2",
     "html-loader": "^0.4.5",
+    "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
-    "webpack": "^2.6.0"
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }

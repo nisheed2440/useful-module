@@ -6,6 +6,11 @@ module.exports = {
         filename: 'um.js',
         path: path.resolve(__dirname, 'lib')
     },
+    devServer: {
+        compress: true,
+        port: 3000,
+        publicPath: "/lib/"
+    },
     module: {
         rules: [{
             test: /\.scss$/,
