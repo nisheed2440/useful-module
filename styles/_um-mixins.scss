@@ -1,0 +1,56 @@
+@import "./um-variables";
+@mixin um-card($um-card-variables:()) {
+    $merged-map: map-merge($um-variables, $um-card-variables);
+    .um-card {
+        position: relative;
+        margin: map-get($merged-map, card-margin);
+        background-color: map-get($merged-map, card-bg-color);
+        transition: box-shadow .25s;
+        border-radius: map-get($merged-map, card-border-radius);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        &-content {
+            padding: map-get($merged-map, card-content-padding);
+            border-radius: map-get($merged-map , actions-border-radius);
+            color: map-get($merged-map, card-font-color);
+            p {
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                color: inherit;
+                font-size:  map-get($merged-map, content-font-size);
+                font-family:  map-get($merged-map , content-font-family);
+                font-weight:  map-get($merged-map , content-font-weight);
+            }
+        }
+        &-title {
+            display: block;
+            line-height: map-get($merged-map , title-line-height);
+            margin-bottom: 8px;
+            font-size: map-get($merged-map , title-font-size);
+            font-family:  map-get($merged-map , title-font-family);
+            font-weight: map-get($merged-map , title-font-weight);
+        }
+        &-action {
+            position: relative;
+            background-color: map-get($merged-map , actions-bg-color);
+            border-top: 1px solid map-get($merged-map , actions-border-color);
+            padding: map-get($merged-map , actions-padding);
+            border-radius: map-get($merged-map , actions-border-radius);
+
+            a{
+                color: map-get($merged-map , actions-link-color);
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                margin-right: 24px;
+                transition: color .3s ease;
+                text-transform: uppercase;
+                font-size:  map-get($merged-map , actions-link-font-size);
+                font-family:  map-get($merged-map , actions-link-font-family);
+                font-weight:  map-get($merged-map , actions-link-font-weight);
+
+                &:hover{
+                    color: map-get($merged-map , actions-link-hover-color);
+                }
+            }
+        }
+    }
+}

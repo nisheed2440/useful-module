@@ -1,0 +1,28 @@
+$um-colors: (
+    card-bg-color: #FFFFFF,
+    card-font-color: #1d1d1d,
+    card-margin: .5rem 0 1rem 0,
+    card-border-radius: 2px,
+    card-content-padding: 24px,
+    actions-border-color: rgba(160,160,160,0.2),
+    actions-bg-color: inherit,
+    actions-border-radius: 0 0 2px 2px,
+    actions-padding: 16px 24px,
+    actions-link-color: #039be5,
+    actions-link-hover-color: lighten(#039be5,10%)
+);
+
+$um-fonts: (
+    title-font-size: 24px,
+    title-font-family: monospace,
+    title-font-weight: 300,
+    title-line-height: 32px,
+    content-font-size: inherit,
+    content-font-family: monospace,
+    content-font-weight: 300,
+    actions-link-font-size: inherit,
+    actions-link-font-family: monospace, 
+    actions-link-font-weight: 300
+);
+
+$um-variables: map-merge($um-colors , $um-fonts);
