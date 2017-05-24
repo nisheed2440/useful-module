@@ -8,7 +8,7 @@ To begin with clone this repository. Then `cd` into the folder where you have cl
 npm link
 ```
 
-This would link the `useful-module` to the global node_modules folder without the need for publishing it to the global npm registry. Next run
+This would link the `useful-module` to the global node_modules folder without the need for publishing it to the global npm registry.
 
 ## Next move to ["Part 2"](https://github.com/nisheed2440/useful-app)
 
